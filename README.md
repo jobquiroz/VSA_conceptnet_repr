@@ -56,9 +56,11 @@ This notebook also takes a long while to execute completely, for demostration pu
 ![Final_Tunning](Parameter_Tunning.png)
 
 #### 9) Demo
+This notebooks shows three examples that summarize all the other notebooks.
 
 
 ### Usage 
+Download the repository and start running each notebook. 
 
 ### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
