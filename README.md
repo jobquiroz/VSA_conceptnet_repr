@@ -1,6 +1,4 @@
-# VSA_conceptnet_repr
-
-Concept representation model using Vector Symbolic Architectures
+# Concept representation model using Vector Symbolic Architectures
 
 ## Description.
 
