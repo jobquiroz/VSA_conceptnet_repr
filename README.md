@@ -36,6 +36,7 @@ This notebook is one of the most important. It includes the functions needed to 
 #### 5) Partitions_and_Distance
 This notebook partitions the SimLex-999 pairs. It also measure the pairwise distances between each partition. This information is crucial to clustering process of similar features in the last stage.
 We use the Numberbatch embedding as a tool for measuring pairwise distances, which can be downloaded from the [next](https://github.com/commonsense/conceptnet-numberbatch) repository (we use the 17.06/mini.h5 version). The mini.h5 file should be located in the Code/ folder
+This notebook should be run to generate the files within the *ClusteringData* folder. 
 
 #### 6) ConceptNet_VSA_AuxFunctions
 This notebook defines the auxiliar functions to be used in ConceptNet_VSA, the main notebook of the project.
