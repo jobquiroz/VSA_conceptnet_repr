@@ -45,15 +45,17 @@ This notebook defines the auxiliar functions to be used in ConceptNet_VSA, the m
 It puts together all other functions to encode the SimLex-999 concepts and its semantic features into high-dimensional binary vectors. These vectors are then used to estimate the semantic similarity between each pair in SimLex-999.
 In this notebook we also measure the correlation between the similarity estimated by SimLex participants and our model.
 We added a cell for measuring similarity using the Numberbatch embedding model. 
-This notebook can take **up to 20 minutes to run**, since it performs all the encoding process for each single concept and semantic feature within SimLex-666 (noun subset of SimLex-999). 
+This notebook can take **up to 20 minutes to run**, since it performs all the encoding process for each single concept and semantic feature within SimLex-666 (noun subset of SimLex-999). This notebook generates a plotting where each pair has its similarity value according to our model and SimLex: 
 
-[ PONER IMAGEN ]
+![Final Correlation](ConceptNet_VSA.png)
 
 #### 8) Parameter_Tunning
 This model required to find two parameters from an iterative process, to explore which parameter values work best. The parameters used in the main notebook were obtained throught the iterative process in Parameter_Tunning.
-This notebook also takes a long while to execute completely, for demostration purposes we only "iterate" over a single value, and then show a plot showing real results from more complete iteration processes. 
+This notebook also takes a long while to execute completely, for demostration purposes we only "iterate" over a single value, and then show a plot showing real results from more complete iteration processes:
 
-[ PONER IMAGEN ]
+![Final_Tunning](Parameter_Tunning.png)
+
+#### 9) Demo
 
 
 ### Usage 
