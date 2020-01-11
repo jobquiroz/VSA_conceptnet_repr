@@ -28,8 +28,37 @@ This notebook makes several experiments using the arithmetic operations defined 
 
 #### 3) Collecting_features.
 This notebook shows the basic functions used to request information from the ConceptNet Web API, and then organizing such information as semantic features of the SimLex-999 dataset. 
+Running this notebook **can take up to 12 hours**. The ConceptNet Web API limits the number of requests to 1 per second. Nevertheless, in the Data folder we provide the final CSV file (Data/ConceptNet_Semantic_Features) containing all the concepts with its semantic features, so that *running this program is not necesary for the next notebooks to work*. 
 
-## Contributing
+#### 4) EncodingDataset
+This notebook is one of the most important. It includes the functions needed to enconde the concepts and its semantic features as high-dimensional binary vectors. The functions in this notebook are the gap between the word space to a high-dimensional vector space. 
+
+#### 5) Partitions_and_Distance
+This notebook partitions the SimLex-999 pairs. It also measure the pairwise distances between each partition. This information is crucial to clustering process of similar features in the last stage.
+We use the Numberbatch embedding as a tool for measuring pairwise distances, which can be downloaded from the [next](https://github.com/commonsense/conceptnet-numberbatch) repository (we use the 17.06/mini.h5 version). 
+
+#### 6) ConceptNet_VSA_AuxFunctions
+This notebook defines the auxiliar functions to be used in ConceptNet_VSA, the main notebook of the project.
+
+#### 7) ConceptNet_VSA
+**This is the main notebook of the project.** 
+It puts together all other functions to encode the SimLex-999 concepts and its semantic features into high-dimensional binary vectors. These vectors are then used to estimate the semantic similarity between each pair in SimLex-999.
+In this notebook we also measure the correlation between the similarity estimated by SimLex participants and our model.
+We added a cell for measuring similarity using the Numberbatch embedding model. 
+This notebook can take **up to 20 minutes to run**, since it performs all the encoding process for each single concept and semantic feature within SimLex-666 (noun subset of SimLex-999). 
+
+[ PONER IMAGEN ]
+
+#### 8) Parameter_Tunning
+This model required to find two parameters from an iterative process, to explore which parameter values work best. The parameters used in the main notebook were obtained throught the iterative process in Parameter_Tunning.
+This notebook also takes a long while to execute completely, for demostration purposes we only "iterate" over a single value, and then show a plot showing real results from more complete iteration processes. 
+
+[ PONER IMAGEN ]
+
+
+### Usage 
+
+### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 Please make sure to update tests as appropriate.
 
