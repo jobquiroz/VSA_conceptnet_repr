@@ -68,5 +68,9 @@ Please make sure to update tests as appropriate.
 ### Authors
 Job Isaias Quiroz Mercado. PhD Student at Centro de Investigación en Computación - Instituto Politécnico Nacional - México
 
+A nice introduction to this topic can be found here: 
+
+https://www.youtube.com/watch?v=xIa-tRnuSQ4&feature=emb_logo
+
 ### License
 [MIT](https://choosealicense.com/licenses/mit/)
